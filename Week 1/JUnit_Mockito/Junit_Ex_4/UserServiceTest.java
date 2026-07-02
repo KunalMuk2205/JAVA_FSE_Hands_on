@@ -1,0 +1,45 @@
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.util.Optional;
+import java.util.NoSuchElementException;
+
+@ExtendWith(MockitoExtension.class)
+public class UserServiceTest {
+
+    @Mock
+    private UserRepository userRepository;
+
+    @InjectMocks
+    private UserService userService;
+
+    // Exercise 2: Mocking a Repository in a Service Test
+    @Test
+    public void testGetUserById_Success() {
+        User mockUser = new User(1L, "Alice");
+        when(userRepository.findById(1L)).thenReturn(Optional.of(mockUser));
+
+        User result = userService.getUserById(1L);
+
+        assertNotNull(result);
+        assertEquals("Alice", result.getName());
+        verify(userRepository).findById(1L);
+    }
+
+    // Exercise 6: Test Service Exception Handling
+    @Test
+    public void testGetUserById_NotFound_ThrowsException() {
+        when(userRepository.findById(99L)).thenReturn(Optional.empty());
+
+        assertThrows(NoSuchElementException.class, () -> {
+            userService.getUserById(99L);
+        });
+
+        verify(userRepository).findById(99L);
+    }
+}
