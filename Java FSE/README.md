@@ -11,7 +11,8 @@ JAVA-FSE-Hands-on/
 ├── Week 1/          # Core Java, Design Patterns, PL/SQL, Unit Testing & Logging
 ├── Week 2/          # Spring Data JPA with Spring Boot & Hibernate
 ├── Week 3/          # Spring REST Services & XML Bean Configuration
-└── Week 4/          # JWT Security & Distributed Microservices with API Gateway
+├── Week 4/          # JWT Security & Distributed Microservices with API Gateway
+└── Week 5/          # ReactJS Single Page Applications & Components
 ```
 
 ---
@@ -51,6 +52,24 @@ JAVA-FSE-Hands-on/
   * **API Gateway**: Running on port `9090` routing calls dynamically through Eureka registry.
   * **Global LogFilter**: Intercepts requests and writes standard console log traces (`Start` and `End`) for routed operations.
 
+### 📅 Week 5: ReactJS Single Page Applications & Component Architecture
+* **My First React (`myfirstreact`)**:
+  * Initial environment bootstrap and rendering text elements on the browser DOM.
+* **Student Management Portal (`StudentApp`)**:
+  * Class component structuring, routing placeholders, and nesting multiple component nodes (`Home`, `About`, `Contact`).
+* **Score Calculator (`scorecalculatorapp`)**:
+  * Functional components parsing props (`Name`, `School`, `Total`, `goal`) and computing calculations dynamically. Includes stylized layout elements.
+* **Blog App Lifecycle Hooks (`blogapp`)**:
+  * Rest API loading using standard lifecycle hook methods (`componentDidMount`) and error boundary catching (`componentDidCatch`).
+* **Cohort Dashboard (`cohortapp`)**:
+  * Style scoping using CSS Modules and conditional styling logic mapped to cohort status.
+* **Trainers SPA Navigation (`TrainersApp`)**:
+  * Multi-page routing layout configured using `react-router-dom` (`BrowserRouter`, `Routes`, `Route`, `Link`, and `useParams` for detail mapping).
+* **Online Shopping Cart (`shoppingapp`)**:
+  * Data iteration over objects and mapping properties to child subcomponents dynamically.
+* **Mall Traffic Controller (`counterapp`)**:
+  * State management, updating numerical values upon user interaction, and binding action methods.
+
 ---
 
 ## Technical Stack
@@ -60,3 +79,5 @@ JAVA-FSE-Hands-on/
 * **Security**: Spring Security 6 & JSON Web Token (`jjwt`)
 * **Service Registry**: Spring Cloud Netflix Eureka
 * **API Routing**: Spring Cloud Gateway
+* **Frontend**: ReactJS (ES6+, JSX, Hooks, React Router 6)
+* **Package Manager**: npm / Node.js
