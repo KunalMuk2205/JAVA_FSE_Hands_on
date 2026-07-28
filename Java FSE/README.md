@@ -12,7 +12,8 @@ JAVA-FSE-Hands-on/
 ├── Week 2/          # Spring Data JPA with Spring Boot & Hibernate
 ├── Week 3/          # Spring REST Services & XML Bean Configuration
 ├── Week 4/          # JWT Security & Distributed Microservices with API Gateway
-└── Week 5/          # ReactJS Single Page Applications & Components
+├── Week 5/          # ReactJS Single Page Applications & Components
+└── Week 6/          # ReactJS Advanced State, Form Validation & REST Consumption
 ```
 
 ---
@@ -69,6 +70,26 @@ JAVA-FSE-Hands-on/
   * Data iteration over objects and mapping properties to child subcomponents dynamically.
 * **Mall Traffic Controller (`counterapp`)**:
   * State management, updating numerical values upon user interaction, and binding action methods.
+
+### 📅 Week 6: ReactJS Advanced State, Form Validation & REST Consumption
+* **Cricket Telemetry (`cricketapp`)**:
+  * Filtering high scorers using ES6 arrow functions, splitting roster into odd/even squads via destructuring, and combining rosters via array spread merging.
+* **Office Space Rental (`officespacerentalapp`)**:
+  * Directory looping with conditional CSS class styling to color-code pricing indicators based on lease threshold ($60,000).
+* **React Event Telemetry (`eventexamplesapp`)**:
+  * Event callbacks orchestration, synthetic events inspection, and dynamic INR-to-EUR currency converter.
+* **StarFly Ticket Booking (`ticketbookingapp`)**:
+  * Conditional layout rendering depending on user session states (Guest browsing mode vs Logged In booking mode).
+* **Blogger Hub (`bloggerapp`)**:
+  * View selectors toggling component mounts between Books, Blogs, and Course details.
+* **Employee Workspace (`employee-theme-app`)**:
+  * Refactoring system prop drilling into unified React Context Provider/Consumer subscriptions (`ThemeContext`).
+* **Complaint Registry (`ticketraisingapp`)**:
+  * Controlled form elements generating unique alphanumeric ticket reference codes upon submission.
+* **Register Account (`mailregisterapp`)**:
+  * Frontend form constraint validation verifying username, email format, and password length.
+* **User Telemetry (`fetchuserapp`)**:
+  * Invoking random user API fetches in asynchronous lifecycle operations (`componentDidMount`) to construct dynamic user profiles.
 
 ---
 
